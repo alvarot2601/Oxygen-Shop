@@ -1,0 +1,12 @@
+@function calcularPorcentaje($percentage, $value){
+	$result : (100 * $value) / $percentage;
+	@return $result;
+}
+@function calcularPorcentaje2($percentage, $value){
+	$result : ($percentage*$value) / 100;
+	@return $result;
+}
+@function calcularDiferenciaPorcentaje($screen-width){
+	$percentage: (375 * 100) / $screen-width;
+	@return $percentage;
+}
